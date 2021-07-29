@@ -80,4 +80,12 @@ body > .auth-info {
   color: white;
   text-align: right;
 }
+
+body > .tip {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  text-align: right;
+}
 /*# sourceMappingURL=style.css.map */

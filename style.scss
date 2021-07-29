@@ -61,4 +61,12 @@ body {
     color: white;
     text-align: right;
   }
+
+  & > .tip {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+    text-align: right;
+  }
 }
