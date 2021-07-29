@@ -13,11 +13,15 @@ html,
 body {
   height: 100%;
   font-family: "Righteous", serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body {
   text-align: center;
-  background-color: #4d5eb3;
+  background: linear-gradient(45deg, #1f262e 0 50%, #2e4769 50% 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +41,7 @@ body h1 {
   display: inline-block;
   color: white;
   font-size: clamp(48px, 12vw, 192px);
-  text-shadow: 0.03em 0.03em 0 #4d5eb3;
+  text-shadow: 0.03em 0.03em 0 #9b0dea;
 }
 
 body h1:after {
@@ -51,11 +55,11 @@ body h1:after {
   background-size: 0.05em 0.05em;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: shad-anim 15s linear infinite;
-          animation: shad-anim 15s linear infinite;
+  -webkit-animation: shaodow-animation 60s linear infinite;
+          animation: shaodow-animation 60s linear infinite;
 }
 
-@-webkit-keyframes shad-anim {
+@-webkit-keyframes shaodow-animation {
   0% {
     background-position: 0 0;
   }
@@ -64,7 +68,7 @@ body h1:after {
   }
 }
 
-@keyframes shad-anim {
+@keyframes shaodow-animation {
   0% {
     background-position: 0 0;
   }
@@ -81,11 +85,34 @@ body > .auth-info {
   text-align: right;
 }
 
+body > .auth-info > p > span {
+  color: #9b0dea;
+}
+
+body > .auth-info > a {
+  color: white;
+}
+
+body > .auth-info > a:hover {
+  color: #c366f7;
+}
+
+body > .auth-info > a:active {
+  color: #9b0dea;
+}
+
 body > .tip {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
   color: white;
   text-align: right;
+}
+
+@media only screen and (max-width: 500px) {
+  body > .tip {
+    width: 18ch;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
